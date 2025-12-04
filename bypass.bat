@@ -9,7 +9,6 @@ echo.
 echo Downloading unattend...
 echo.
 curl -L -o C:\Windows\Panther\unattend.xml https://cdn.gocciola.xyz/notautounattend.xml
-echo,
+echo.
 echo Restarting OOBE...
-
 %WINDIR%\System32\Sysprep\Sysprep.exe /oobe /unattend:C:\Windows\Panther\unattend.xml /reboot
